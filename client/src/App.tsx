@@ -1,5 +1,5 @@
 import ThemeProvider from "./theme";
-import { Button, Input } from "antd";
+import { Button } from "antd";
 
 function App() {
   
@@ -11,7 +11,7 @@ function App() {
         <div className="text-gray-500 text-3xl">Homepage</div>
         <Button>Default Button</Button>
         <Button type="primary">Primary Button</Button>
-        <Input placeholder="Basic usage" />
+        <Button> Default</Button>
       </div>
     </ThemeProvider>
   )
