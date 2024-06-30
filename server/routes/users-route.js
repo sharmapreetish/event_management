@@ -65,5 +65,4 @@ router.get("/current-user", validateToken, async (req, res) => {
     }
   });
   
-  
   module.exports = router;
