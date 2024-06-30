@@ -8,7 +8,7 @@ function App() {
     <ThemeProvider>
 
       <div className="flex flex-col items-center justify-center h-screen gap-5 p-5">
-        <div className="text-gray-500 text-3xl font-bold">Homepage</div>
+        <div className="text-gray-500 text-3xl">Homepage</div>
         <Button>Default Button</Button>
         <Button type="primary">Primary Button</Button>
         <Input placeholder="Basic usage" />
