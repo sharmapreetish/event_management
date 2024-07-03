@@ -10,6 +10,7 @@ import EditEventPage from "./pages/private/admin/events/edit";
 import CreateEvenetPage from "./pages/private/admin/events/create";
 import EventsPage from "./pages/private/admin/events";
 import EventInfoPage from "./pages/private/event";
+import UserBookingsPage from "./pages/private/home/profile/bookings";
 
 function App() {
   
@@ -78,6 +79,15 @@ function App() {
               </PrivateLayout>
             }
           />
+           <Route
+            path="/profile/bookings"
+            element={
+              <PrivateLayout>
+                <UserBookingsPage />
+              </PrivateLayout>
+            }
+          />
+
           <Route
             path="/admin/events/edit/:id"
             element={
