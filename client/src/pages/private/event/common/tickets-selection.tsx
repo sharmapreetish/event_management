@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { EventType } from "../../../../interfaces";
 import { Button, Input, message } from "antd";
-import PaymentModal from "./payment-modal";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
 import { getClientSecret } from "../../../../api-services/payments-service";
+import PaymentModal from "./payment-modal";
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
 
