@@ -6,6 +6,9 @@ import Homepage from "./pages/private/home";
 import ProfilePage from "./pages/private/home/profile";
 import PrivateLayout from "./layouts/private-layout";
 import PublicLayout from "./layouts/public-layout";
+import EditEventPage from "./pages/private/admin/events/edit";
+import CreateEvenetPage from "./pages/private/admin/events/create";
+import EventsPage from "./pages/private/admin/events";
 
 function App() {
   
@@ -48,6 +51,34 @@ function App() {
             </PrivateLayout>
           }
         />
+
+<Route
+            path="/admin/events"
+            element={
+              <PrivateLayout>
+                <EventsPage />
+              </PrivateLayout>
+            }
+          />
+
+          <Route
+            path="/admin/events/create"
+            element={
+              <PrivateLayout>
+                <CreateEvenetPage />
+              </PrivateLayout>
+            }
+          />
+
+          <Route
+            path="/admin/events/edit/:id"
+            element={
+              <PrivateLayout>
+                <EditEventPage />
+              </PrivateLayout>
+            }
+          />
+
       </Routes>
     </BrowserRouter>
   </ThemeProvider>
