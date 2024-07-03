@@ -9,6 +9,7 @@ import PublicLayout from "./layouts/public-layout";
 import EditEventPage from "./pages/private/admin/events/edit";
 import CreateEvenetPage from "./pages/private/admin/events/create";
 import EventsPage from "./pages/private/admin/events";
+import EventInfoPage from "./pages/private/event";
 
 function App() {
   
@@ -69,7 +70,14 @@ function App() {
               </PrivateLayout>
             }
           />
-
+          <Route
+            path="/event/:id"
+            element={
+              <PrivateLayout>
+                <EventInfoPage />
+              </PrivateLayout>
+            }
+          />
           <Route
             path="/admin/events/edit/:id"
             element={
